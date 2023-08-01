@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Layput</title>
+    <link rel="stylesheet" href="../css/layout.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Store</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+
+            <ul class="social">
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Twitter</a></li>
+            </ul>
+        </nav>
+
+        <div style="margin: 20px;"></div>
+        <span>Laylot:</span>
+        <a href="" class="stack">Stack</a>
+        <a href="" class="grid">Grid</a>
+        <section class="blocks">
+            <article>
+                <h2>I pity the fool...</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus soluta facere fuga pariatur sint,
+                    tempore aliquid explicabo harum, sequi, accusamus eveniet eum laboriosam ipsa quibusdam adipisci
+                    perferendis nam labore! Quam!</p>
+            </article>
+
+            <article>
+                <h2>Get to the chopper</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, nam corporis dolor repellendus
+                    laboriosam ipsum qui dicta dolorem, aliquam, vel esse quo ratione fugiat vero iusto odio blanditiis
+                    amet tenetur.</p>
+            </article>
+
+            <article>
+                <h2>what's a horse doing on a spaceship...?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eius quisquam dignissimos alias deleniti
+                    maiores! Sunt ut sit, reprehenderit fugit asperiores blanditiis maiores quasi fuga esse possimus
+                    aliquid ea sed.</p>
+            </article>
+
+            <article>
+                <h2>I pity the fool...</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus soluta facere fuga pariatur sint,
+                    tempore aliquid explicabo harum, sequi, accusamus eveniet eum laboriosam ipsa quibusdam adipisci
+                    perferendis nam labore! Quam!</p>
+            </article>
+        </section>
+    </div>
+    <script>
+        $("a.stack").on("click", function(){
+            $("article").addClass("stack")
+        });
+        $("a.grid").on("click", function(){
+            $("article").removeClass("stack")
+        });
+    </script>
+</body>
+
+</html>
